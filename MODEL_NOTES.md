@@ -32,3 +32,8 @@ Each row represents one month and business segment. The four segments are Retail
 | Upside | +20% | −2 pp | +8% |
 | Downside | −10% | +2 pp | +5% |
 | Custom | −10% | 0 pp | +5% |
+
+
+## Model integrity controls
+
+Model Checks evaluates the selected segment and scenario and displays an overall PASS or FAIL. The monthly detail compares raw actuals with the income statement, ties actuals across the reports, recomputes P&L and forecast arithmetic, and checks dashboard chart inputs. The summary checks annual totals, dashboard KPIs and the active scenario's assumptions and results. The tolerances are $0.01 for amounts and 0.000001 for ratios. An error in a checked calculation triggers a FAIL.
